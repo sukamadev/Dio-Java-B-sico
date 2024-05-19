@@ -4,8 +4,6 @@ public class Tarefa {
 
     public Tarefa(String descricao) {
         this.descricao = descricao;
-
-    
     }
 
     public String getDescricao() {
@@ -14,9 +12,7 @@ public class Tarefa {
 
     @Override
     public String toString() {
-        return descricao;
+        return "Tarefa [descricao=" + descricao + "]";
     }
-
-
     
 }
