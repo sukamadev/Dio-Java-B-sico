@@ -49,14 +49,16 @@ public class CatalogoLivros {
     } 
     public static void main(String[] args) {
         CatalogoLivros catalogoLivros = new CatalogoLivros();
-        catalogoLivros.adicionarLivro(2020,"Autor 1", "Tituli 1");
-        catalogoLivros.adicionarLivro(2010,"Autor 2", "Tituli 1");
-        catalogoLivros.adicionarLivro(2000,"Autor 2", "Tituli 2");
-        catalogoLivros.adicionarLivro(2005,"Autor 3", "Tituli 3");
-        catalogoLivros.adicionarLivro(2024,"Autor 4", "Tituli 4");
+        catalogoLivros.adicionarLivro(2020,"Autor 1", "Titulo 1");
+        catalogoLivros.adicionarLivro(2010,"Autor 2", "Titulo 1");
+        catalogoLivros.adicionarLivro(2000,"Autor 2", "Titulo 2");
+        catalogoLivros.adicionarLivro(2005,"Autor 3", "Titulo 3");
+        catalogoLivros.adicionarLivro(2024,"Autor 4", "Titulo 4");
 
         System.out.println(catalogoLivros.pesquisarPorAutor("Autor 4"));
         System.out.println(catalogoLivros.pesquisarporIntervaloAnos(2010, 2020));
+        System.out.println(catalogoLivros.pesquisarPorTitulo("Titulo 1"));
+
 
     }
 }
